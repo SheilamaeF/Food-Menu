@@ -1,12 +1,43 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Food Menu</title>
+  <style>
+    /* Add some basic styling to make the menu look better */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    .menu-item button {
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .menu-item button:hover {
+      background-color: #3e8e41;
+    }
+    #cart {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <h1>Food Menu</h1>
   <ul id="menu"></ul>
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0.00</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
